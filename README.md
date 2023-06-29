@@ -1,8 +1,8 @@
 ## Voice Glyph
 
-Deployed at : https://voiceglyph.netlify.com/
+Deployed at: https://voiceglyph.netlify.com/
 
-Voice Glyph is a revolutionary React web app that converts speech to text in real-time. It provides a seamless and intuitive experience for users to transcribe their spoken words into written text instantly. With Voice Glyph, you can effortlessly capture your ideas, take notes, or dictate content without the need for manual typing.
+Voice Glyph is a revolutionary React web app that converts speech to text in real time. It provides a seamless and intuitive experience for users to transcribe their spoken words into written text instantly. With Voice Glyph, you can effortlessly capture your ideas, take notes, or dictate content without the need for manual typing.
 
 ## Features
 
@@ -18,13 +18,13 @@ Voice Glyph is a revolutionary React web app that converts speech to text in rea
 1. Clone the repository:
 
    ```shell
-   git clone https://github.com/SudoKMaar/voice-glyph.git
+   git clone https://github.com/SudoKMaar/VoiceGlyph.git
    ```
 
 2. Navigate to the project directory:
 
    ```shell
-   cd voice-glyph
+   cd VoiceGlyph
    ```
 
 3. Install the dependencies:
@@ -46,7 +46,7 @@ Voice Glyph is a revolutionary React web app that converts speech to text in rea
 ## How It Works
 
 1. Click the "Start Listening" button to begin speech recognition.
-2. Speak into your device's microphone, and your speech will be converted to text in real-time.
+2. Speak into your device's microphone, and your speech will be converted to text in real time.
 3. The transcribed text will be displayed in the main content area of the app.
 4. To copy the transcribed text to the clipboard, click the "Copy to clipboard" button.
 5. To export the transcribed text as a text file, click the "Export" button. The file will be downloaded as "transcript.txt".
