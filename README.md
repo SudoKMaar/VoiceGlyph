@@ -1,6 +1,6 @@
 ## Voice Glyph
 
-Deployed at : https://voiceglyph.netlify.com/
+Deployed at : [VoiceGlyph](https://voiceglyph.netlify.com/)
 
 Voice Glyph is a revolutionary React web app that converts speech to text in real-time. It provides a seamless and intuitive experience for users to transcribe their spoken words into written text instantly. With Voice Glyph, you can effortlessly capture your ideas, take notes, or dictate content without the need for manual typing.
 
@@ -93,4 +93,3 @@ Contributions are welcome! If you find any issues or would like to enhance the V
 ## License
 
 This Voice Glyph app is open source and available under the [MIT License](LICENSE).
-```

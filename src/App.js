@@ -1,5 +1,7 @@
 import "./App.css";
-import SpeechRecognition, { useSpeechRecognition } from "react-speech-recognition";
+import SpeechRecognition, {
+  useSpeechRecognition,
+} from "react-speech-recognition";
 import { useState } from "react";
 import logo from "./vg_logo.jpg";
 import { saveAs } from "file-saver";
@@ -11,7 +13,8 @@ const App = () => {
 
   const startListening = () =>
     SpeechRecognition.startListening({ continuous: true, language: "en-IN" });
-  const { transcript, resetTranscript, browserSupportsSpeechRecognition } = useSpeechRecognition();
+  const { transcript, resetTranscript, browserSupportsSpeechRecognition } =
+    useSpeechRecognition();
 
   if (!browserSupportsSpeechRecognition) {
     return null;
@@ -58,24 +61,40 @@ const App = () => {
           written text, capturing ideas and taking notes with ease. Experience
           the convenience and speed of Voice Glyph today...
         </p>
-
         <div className="main-content" onClick={() => setTextToCopy(transcript)}>
           {showContent ? transcript : null}
         </div>
-
         <div className="btn-style">
           <button onClick={handleCopyToClipboard}>
             {isCopied ? "Copied!" : "Copy to clipboard"}
           </button>
           <button onClick={startListening}>Start Listening</button>
-          <button onClick={SpeechRecognition.stopListening}>Stop Listening</button>
+          <button onClick={SpeechRecognition.stopListening}>
+            Stop Listening
+          </button>
           <button onClick={handleExport}>Export</button>
           <button onClick={handleClear}>Clear</button>
         </div>
-
         <footer className="footer">
-          &copy; {currentYear} Abhishek Kumar. All rights reserved. | Powered by KMaar Miscellaneous Studio
-        </footer>
+          &copy; {currentYear}{" "}
+          <a
+            href="https://kmaar.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="link"
+          >
+            Abhishek Kumar
+          </a>
+          . All rights reserved. | Powered by{" "}
+          <a
+            href="https://kmstudio.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="link"
+          >
+            KMaar Miscellaneous Studio
+          </a>
+        </footer>{" "}
       </div>
     </>
   );
